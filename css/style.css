@@ -1,0 +1,51 @@
+:root 
+{
+    --color-1: hsl(40, 97%, 58%);
+    --color-2: hsl(216, 17%, 35%);
+    --color-3: hsl(217, 12%, 62%);
+    --color-4: hsl(212, 41%, 93%);
+    --color-5: hsl(214, 37%, 96%);
+    --color-6: hsl(39, 100%, 94%);
+    
+    --body-font-: 'Lexend Deca', sans-serif;
+    --headings-font: 'Space Mono', monospace;
+}
+
+
+body 
+{
+    font-size: 0.9375rem;
+    font-family: var(--body-font-);
+    line-height: 1.66;
+}
+
+h1, h2, h3, h4
+{
+    font-family: var(--headings-font);
+}
+
+h1 
+{
+    font-size: 3.5rem;
+    letter-spacing: -2.5;
+}
+
+h2 
+{
+    font-size: 3rem;
+    letter-spacing: -2.14;
+}
+
+h3 
+{
+    font-size:2.5rem;
+    line-height: 1.2;
+    letter-spacing: -1.79;
+}
+
+h4
+{
+    font-size: 1.5rem;
+    line-height: 1.16;
+    letter-spacing: -1.07;
+}
