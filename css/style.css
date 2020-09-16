@@ -12,6 +12,8 @@
 }
 
 
+/*TYPOGRAPHY*/
+
 body 
 {
     font-size: 0.9375rem;
@@ -49,3 +51,33 @@ h4
     line-height: 1.16;
     letter-spacing: -1.07;
 }
+
+
+
+/*LAYOUT*/
+
+.only-desktop
+{
+    display: none;
+}
+
+
+.mobile-nav-overlay
+{
+    display: none;
+}
+
+
+
+
+
+/*COMPONENTS*/
+
+
+.container 
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
