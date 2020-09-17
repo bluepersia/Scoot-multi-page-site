@@ -1,6 +1,7 @@
 :root 
 {
     --color-1: hsl(40, 97%, 58%);
+    --color-1b: hsl(216, 17%, 20%);
     --color-2: hsl(216, 17%, 35%);
     --color-3: hsl(217, 12%, 62%);
     --color-4: hsl(212, 41%, 93%);
@@ -57,6 +58,12 @@ h4
 }
 
 
+a
+{
+    text-decoration: none;
+}
+
+
 
 /*LAYOUT*/
 
@@ -73,7 +80,11 @@ body
 }
 
 
-
+main
+{
+    overflow: hidden;
+    position: relative;
+}
 
 .only-desktop
 {
@@ -83,7 +94,42 @@ body
 
 .mobile-nav-overlay
 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    transition: opacity 500ms, left 500ms;
+    
     display: none;
+    opacity: 0;
+    
+    left: -100%;
+}
+
+.mobile-nav-overlay.open
+{
+    opacity: 1;
+    left: 0px;
+}
+
+.mobile-nav
+{
+    background-color: var(--color-2);
+    text-align: left;
+    
+    padding: 3rem 1.6rem 1.6rem;
+    width: fit-content;
+    height: 100%;
+    
+    
+}
+.mobile-nav a
+{
+    color: white;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.15rem;
+    font-family: var(--headings-font);
 }
 
 
@@ -104,10 +150,6 @@ header .logo
 }
 
 
-main
-{
-    overflow: hidden;
-}
 
 
 .intro
@@ -121,6 +163,14 @@ main
     
     
     background-position: left -300px bottom 25px, center center;
+}
+
+@media(min-width: 376px)
+{
+    .intro
+    {
+        background-image: url(../assets/patterns/right-arrow.svg), url(../assets/images/home-hero-tablet.jpg);
+    }
 }
 
 
@@ -155,6 +205,12 @@ main
 .step .title
 {
     margin-bottom: 1em;
+}
+
+
+.features
+{
+    margin-bottom: 6rem;
 }
 
 
@@ -214,6 +270,76 @@ main
 {
     color: var(--color-3);
     margin-bottom: 2em;
+}
+
+
+.call-to-action
+{
+    padding: 5rem;
+    background: var(--color-2);
+    background-image: url(../assets/patterns/semi-circles.svg);
+    background-position: left -200px bottom;
+    background-repeat: no-repeat;
+}
+
+
+.call-to-action .title
+{
+    color: white;
+    margin-bottom: 1.2em;
+}
+
+.call-to-action .btn-store:not(:last-child)
+{
+    margin-right: 0.5rem;
+}
+
+.call-to-action .app-store
+{
+    max-width:115px;
+}
+
+.call-to-action .google-play
+{
+    max-width: 130px;
+}
+
+footer
+{
+    background-color: var(--color-1b);
+    padding: 3rem 0 4rem;
+}
+
+
+footer .logo 
+{
+    margin-bottom: 2em;
+}
+
+footer .logo path
+{
+    fill: white;
+}
+
+footer a 
+{
+    color: var(--color-3);
+    display: block;
+}
+
+footer a:not(:last-child)
+{
+    margin-bottom: 1em;
+}
+
+footer nav
+{
+    margin-bottom: 5rem;
+}
+
+.social-media .icon:not(:last-child)
+{
+    margin-right: 1.4em;
 }
 
 
