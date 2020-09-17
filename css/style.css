@@ -28,33 +28,54 @@ h1, h2, h3, h4
 
 h1 
 {
-    font-size: 3.5rem;
-    letter-spacing: -2.5;
+    font-size: 2.4rem;
+    letter-spacing: 2.5;
+    line-height: 1;
 }
 
 h2 
 {
     font-size: 3rem;
-    letter-spacing: -2.14;
+    letter-spacing: 2.14;
 }
 
 h3 
 {
     font-size:2.5rem;
     line-height: 1.2;
-    letter-spacing: -1.79;
+    letter-spacing: 1.79;
 }
 
 h4
 {
     font-size: 1.5rem;
     line-height: 1.16;
-    letter-spacing: -1.07;
+    letter-spacing: 1.07;
 }
 
 
 
 /*LAYOUT*/
+
+* 
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+img
+{
+    max-width: 100%;
+}
+
+
 
 .only-desktop
 {
@@ -69,6 +90,44 @@ h4
 
 
 
+header
+{
+    padding: 1.31rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo
+{
+    max-width: 75px;
+    justify-self: center;
+}
+
+
+.intro
+{
+    background-image: url(../assets/patterns/right-arrow.svg), url(../assets/images/home-hero-mobile.jpg);
+    color: var(--color-4);
+    
+    padding: 3rem 0 10rem;
+    
+    background-repeat: no-repeat;
+    
+    background-position: left -300px bottom 25px, center center;
+}
+
+
+.intro .title
+{
+    margin-bottom: .6em;
+}
+
+.intro .text
+{
+    margin-bottom: 2rem;
+}
 
 
 /*COMPONENTS*/
@@ -76,8 +135,18 @@ h4
 
 .container 
 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+}
+
+
+.btn
+{
+    background: var(--color-1);
+    color: var(--color-4);
+    border: 0;
+    padding: 0.8em 2em;
+    font-family: var(--headings-font);
+    font-size: 1rem;
 }
 
